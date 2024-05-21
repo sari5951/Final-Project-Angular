@@ -1,0 +1,20 @@
+<p>maain works!</p>
+<div class="header">
+    <div class="user-info">
+      <span>{{ username }}</span>
+      <span>כמות קו"ח שנשלחו:{{userResume}} </span>
+      <span>תחום המשרה</span>
+
+      <a [routerLink]="'login'">login</a>
+      <input type="text" id="jobSearch"> 
+      <a [routerLink]="'jobs'" [queryParams]="{ resumeCount: userResume }">סינון</a>
+      
+      
+  </div>
+
+  
+  <div class="footer">
+    <span>פרטי יצירת קשר עם מנהל האתר</span>
+    <!-- יש להוסיף את פרטי יצירת הקשר המדויקים -->
+  </div>
+  

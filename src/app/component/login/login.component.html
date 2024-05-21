@@ -1,0 +1,11 @@
+<div>login</div>
+<form #f=ngForm>
+    <div> <label for="username">שם משתמש</label>
+        <input #n type="text" name="username" [required]="true" maxlength="20" [(ngModel)]="User.username">
+    </div>
+    <div>
+        <label for="password">סיסמא</label>
+        <input #p type="password" name="password" [required]="true" minlength="8" [(ngModel)]="User.password">
+    </div>
+    <button (click)="signUp()">לכניסה </button>
+</form>
