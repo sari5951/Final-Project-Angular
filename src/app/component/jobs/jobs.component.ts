@@ -15,14 +15,10 @@ export class JobsComponent implements OnInit{
   }
 
   listJobs: Job[] = [];
-  resumeCount: number=3;
+ 
   ngOnInit() {
-    // מנוי לשינויים ב־queryParams
-    this.route.queryParams.subscribe(params => {
-      // שליפת הנתונים שנשלחו ב־queryParams
-      this.resumeCount = +params['resumeCount'] || 0;
-      // עכשיו תוכל להשתמש בערך של resumeCount כרצונך
-    });
+  
+   
   }
 }
 

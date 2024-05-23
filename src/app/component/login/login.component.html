@@ -7,5 +7,11 @@
         <label for="password">סיסמא</label>
         <input #p type="password" name="password" [required]="true" minlength="8" [(ngModel)]="User.password">
     </div>
+    <div>
+{{User.username}}
+    </div>
+    <div>
+        {{User.password}}
+            </div>
     <button (click)="signUp()">לכניסה </button>
 </form>

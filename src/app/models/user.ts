@@ -4,7 +4,7 @@ export interface User {
     username: string;
     password: string;
     jobSearchField: string;
-    countResume:number;
+    
     
 
   }
