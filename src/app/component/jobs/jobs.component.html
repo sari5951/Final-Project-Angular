@@ -1,2 +1,15 @@
 <p>jobs works!</p>
-<div></div>
+<!-- <button (click)="changeSort()">{{sortOrder === 1? "^" : "v"}}</button> -->
+<app-filter></app-filter>
+<div class="list-jobs">
+    <div *ngFor="let c of listJobs let i = index">
+        <div class="job">
+            <p>{{ i }}</p>
+            <app-single-job [jobData]="c"></app-single-job>
+        </div>
+    </div>{{listJobs}}ליסט
+    <!-- <button (click)="filterByField('תחום')">סנן לפי תחום</button> -->
+  <!-- כפתור לסינון לפי אזור משרה -->
+  <!-- <button (click)="filterByField('אזור')">סנן לפי אזור</button> -->
+</div>
+<br>

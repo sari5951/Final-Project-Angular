@@ -1,0 +1,51 @@
+/* styles.css */
+
+/* סגנון כללי */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  /* סגנון לרשימת המשרות */
+  .list-jobs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* סגנון למשרה יחידה ברשימה */
+ .job {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+  }
+  
+  /* סגנון לכותרת העמוד */
+  .page-title {
+    color: #35495e;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* סגנון לכפתור */
+  .button {
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  
+  .button:hover {
+    background-color: #27ae60;
+  }
+  
+  /* סגנון לסימון המיון */
+  .sort-indicator {
+    font-size: 20px;
+  }
+  

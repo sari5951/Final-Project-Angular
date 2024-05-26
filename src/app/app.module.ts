@@ -38,7 +38,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaainComponent } from './component/maain/maain.component';
 import { JobsComponent } from './component/jobs/jobs.component';
 import { SingleJobComponent } from './component/single-job/single-job.component';
-import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule
+import { HttpClientModule } from '@angular/common/http';
+import { FilterComponent } from './component/filter/filter.component'; // Import HttpClientModule
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { HttpClientModule } from '@angular/common/http'; // Import HttpClientMod
     LoginComponent,
     MaainComponent,
     JobsComponent,
-    SingleJobComponent
+    SingleJobComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,

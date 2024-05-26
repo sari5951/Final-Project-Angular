@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component ,Input} from '@angular/core';
+import { Job } from '../../models/job';
 
 @Component({
   selector: 'app-single-job',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './single-job.component.css'
 })
 export class SingleJobComponent {
+
+  
+
+  @Input()
+  jobData:Job | null = null
 
 }

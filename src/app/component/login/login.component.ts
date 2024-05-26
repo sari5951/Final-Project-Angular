@@ -29,7 +29,7 @@ User:User= { id: 0, username: "", password: "", jobSearchField: "" } ;
      if (this.newUser) 
      {
       alert(" connect");
-       this.router.navigate(['/']);
+       this.router.navigate(['jobs']);
       localStorage.setItem('userConnect',JSON.stringify(this.newUser));
      } 
     else {

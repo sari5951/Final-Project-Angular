@@ -9,7 +9,7 @@
     <a routerLink="/login">התחברות</a>
 
     <input type="text" id="jobSearch">
-    <a [routerLink]="'jobs'" [queryParams]="{ resumeCount: userResume }">סינון</a>
+    <a [routerLink]="'jobs/all/all'" [queryParams]="{ resumeCount: userResume }">סינון</a>
 
 
   </div>
@@ -26,4 +26,4 @@
  <input type="file" (change)="onFileSelected($event)">
  <span>{{ uploadedFiles }}</span>
   </div>
-
+  <router-outlet></router-outlet>

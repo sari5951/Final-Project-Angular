@@ -1,0 +1,25 @@
+/* single-job.component.css */
+
+/* סגנון למשרה יחידה */
+.job {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    width: 50%;
+  }
+  
+  /* סגנון לתאור המשרה */
+  .job-description {
+    color: #35495e;
+    font-size: 18px;
+  }
+  
+  /* סגנון לשעות עבודה */
+  .job-hours {
+    color: #41b883;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  

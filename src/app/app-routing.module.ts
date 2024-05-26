@@ -5,10 +5,9 @@ import { LoginComponent } from "./component/login/login.component";
 import { MaainComponent } from "./component/maain/maain.component";
 
 const routes: Routes = [
-  { path: '', component: MaainComponent },
+  { path: '', component: MaainComponent, children:[{ path: 'jobs/:area/:region', component: JobsComponent}]},
   { path: 'login', component: LoginComponent },
-  { path: 'jobs', component: JobsComponent },
- 
+
 ];
 
 @NgModule({

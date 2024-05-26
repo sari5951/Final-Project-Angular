@@ -1,11 +1,11 @@
-<div>login</div>
-<form #f=ngForm>
-    <div> <label for="username">שם משתמש</label>
-        <input #n type="text" name="username" [required]="true" maxlength="20" [(ngModel)]="User.username">
+<div>login
+<form #f=ngForm  id="loginForm" class="login-form ">
+    <div> <label for="username" class=".login-label">שם משתמש</label>
+        <input #n type="text" name="username" [required]="true" maxlength="20" [(ngModel)]="User.username" class="login-input">
     </div>
     <div>
-        <label for="password">סיסמא</label>
-        <input #p type="password" name="password" [required]="true" minlength="8" [(ngModel)]="User.password">
+        <label for="password" class=".login-label" >סיסמא</label>
+        <input #p type="password" name="password" [required]="true" minlength="8" [(ngModel)]="User.password" class="login-input">
     </div>
     <div>
 {{User.username}}
@@ -13,5 +13,6 @@
     <div>
         {{User.password}}
             </div>
-    <button (click)="signUp()">לכניסה </button>
+    <button (click)="signUp()" class="login-button">לכניסה </button>
 </form>
+
