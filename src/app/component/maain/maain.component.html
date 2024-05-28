@@ -2,14 +2,12 @@
 <div class="header">
   <span>{{ username }}</span>
   <div class="user-info">
-    <span>כמות קו"ח שנשלחו:{{userResume}} </span>
-    <span>תחום המשרה</span>
-
+    
     <!-- <a [routerLink]="'login'">login</a> -->
     <a routerLink="/login">התחברות</a>
 
     <input type="text" id="jobSearch">
-    <a [routerLink]="'jobs/all/all'" [queryParams]="{ resumeCount: userResume }">סינון</a>
+    <a [routerLink]="'jobs/all/all'">סינון</a>
 
 
   </div>
@@ -23,7 +21,7 @@
       <!-- <p>אימייל: admin@example.com</p> -->
     </div>
  <!-- הכפתור להעלאת קבצים -->
- <input type="file" (change)="onFileSelected($event)">
- <span>{{ uploadedFiles }}</span>
+ <!-- <input type="file" (change)="onFileSelected($event)">
+ <span>{{ uploadedFiles }}</span> -->
   </div>
   <router-outlet></router-outlet>

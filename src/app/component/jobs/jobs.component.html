@@ -1,11 +1,27 @@
 <p>jobs works!</p>
 <!-- <button (click)="changeSort()">{{sortOrder === 1? "^" : "v"}}</button> -->
-<app-filter></app-filter>
+<!-- <app-filter></app-filter> -->
+<span>כמות קו"ח שנשלחו:{{userResume}} </span>
+<span>תחום המשרה</span>
+
+<div>המשרות ששלחת קוקות חיים</div>
+<div>
+    <div *ngFor="let c of listSearchResume let i = index">
+        
+            <p>{{ i }}</p>
+            <p>{{ c}}</p>
+
+    </div>
+    {{listSearchResume}}
+</div>
+<div style="display: flex;">
+<app-filter (filterChanged)="changeFilter($event)"></app-filter>
+</div>
 <div class="list-jobs">
     <div *ngFor="let c of listJobs let i = index">
         <div class="job">
             <p>{{ i }}</p>
-            <app-single-job [jobData]="c"></app-single-job>
+            <app-single-job [jobData]="c" (resume)="updateResume($event)" (addJob)="addJobTOlist($event)"></app-single-job>
         </div>
     </div>{{listJobs}}ליסט
     <!-- <button (click)="filterByField('תחום')">סנן לפי תחום</button> -->

@@ -4,5 +4,7 @@
     <!-- <p>{{jobData}}</p> -->
     <p>תאור: {{jobData?.jobField}}</p>
     <p>תאור: {{jobData?.scopeOfHours}}</p>
+    <input type="file" (change)="onFileSelected($event)">
+ <span>{{ uploadedFiles }}</span>
 </div>
     
